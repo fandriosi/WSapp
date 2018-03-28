@@ -1,0 +1,7 @@
+com\andriosi\fabio\wsapp\config\ApplicationConfig.class
+com\andriosi\fabio\wsapp\entities\Caminhao.class
+com\andriosi\fabio\wsapp\entities\Caminhao_.class
+com\andriosi\fabio\wsapp\services\CaminhaoService.class
+com\andriosi\fabio\session\AbstractFacade.class
+com\andriosi\fabio\session\CaminhaoFacade.class
+com\andriosi\fabio\uitl\CaminhaoController.class
