@@ -8,6 +8,7 @@ package com.andriosi.fabio.wsapp.services;
 import com.andriosi.fabio.session.CaminhaoFacade;
 import com.andriosi.fabio.wsapp.entities.Caminhao;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -46,6 +47,13 @@ public class CaminhaoService{
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateCaminhao(Caminhao caminhao){
         new CaminhaoFacade().edit(caminhao);
+        return Response.ok().build();
+    }
+    
+    @DELETE
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response deleteCaminhao(Caminhao caminhao){
+        new CaminhaoFacade().remove(caminhao);
         return Response.ok().build();
     }
 }
